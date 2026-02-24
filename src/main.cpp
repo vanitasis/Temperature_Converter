@@ -11,7 +11,11 @@ using namespace std ;
 
 int opsi; 
 int opsicelcius ;
+int opsifahrenheit ;
+int opsireamur ;
+int opsikelvin ;
 char confirm ;
+const double kelvin = 273.15 ;
 
 class Konversi {
 
@@ -27,7 +31,7 @@ class Konversi {
 
     void input() {
         
-         cout << "+=========================================+" << endl;
+        cout << "+=========================================+" << endl;
         cout << "||  ********* ****** ***   *** *******   ||" << endl;
         cout << "||  ********* ***    **** **** ***   **  ||" << endl;
         cout << "||     ***    ****** *** * *** *******   ||" << endl;
@@ -47,11 +51,21 @@ class Konversi {
 
     void Celcius() {
 
+        cout << "+====================+" << endl;
+        cout << "||   *********  **  ||" << endl;
+        cout << "||  *********** **  ||" << endl;
+        cout << "||  ***             ||" << endl;
+        cout << "||  ***             ||" << endl;
+        cout << "||  ***********     ||" << endl;
+        cout << "||   *********      ||" << endl;
+        cout << "+====================+" << endl;
+
         cout << "=====================" << endl ;
         cout << "CHOSE OPERATION : " << endl ;
         cout << "1.FAHRENHEIT" << endl ;
         cout << "2.REAMUR" << endl ;
         cout << "3.KELVIN" << endl ;
+        cout << "4.BACK" << endl ;
         cin >> opsicelcius ;
         
         temperatur temp ;
@@ -64,7 +78,26 @@ class Konversi {
             cout << "result : " 
                  << temp.Dcelcius * 9 / 5 + 32 
                  << "° Fahrenheit"  << endl ;
+        }else if (opsicelcius == 2)
+        {
+            cout << "Enter degrees Celsius: " ;
+            cin >> temp.Dcelcius ;
+
+            cout << "result : " 
+                 << temp.Dcelcius * 4 / 5 
+                 << "° reamur"  << endl ;
+        }else if (opsicelcius == 3)
+        {
+            cout << "Enter degrees Celsius: " ;
+            cin >> temp.Dcelcius ;
+
+            cout << "result : " 
+                 << temp.Dcelcius + kelvin 
+                 << "° kelvin"  << endl ;
+        }else if(opsicelcius == 4) {
+            input() ;
         }
+        
 
         cout << "continue ? y/n : " ;
         cin >> confirm ;
@@ -76,6 +109,7 @@ class Konversi {
         cout << "1.FAHRENHEIT" << endl ;
         cout << "2.REAMUR" << endl ;
         cout << "3.KELVIN" << endl ;
+        cout << "4.back" << endl ;
         cin >> opsicelcius ;
         
         temperatur temp ;
@@ -88,6 +122,128 @@ class Konversi {
             cout << "result : " 
                  << temp.Dcelcius * 9 / 5 + 32 
                  << "° Fahrenheit"  << endl ;
+        }else if (opsicelcius == 2)
+        {
+            cout << "Enter degrees Celsius: " ;
+            cin >> temp.Dcelcius ;
+
+            cout << "result : " 
+                 << temp.Dcelcius * 4 / 5 
+                 << "° reamur"  << endl ;
+        }else if (opsicelcius == 3)
+        {
+            cout << "Enter degrees Celsius: " ;
+            cin >> temp.Dcelcius ;
+
+            cout << "result : " 
+                 << temp.Dcelcius + kelvin 
+                 << "° kelvin"  << endl ;
+        }else if(opsicelcius == 4) {
+            input() ;
+        }
+
+        cout << "continue ? y/n : " ;
+        cin >> confirm ;
+    }
+
+    if (confirm == 'n')
+    {
+        input(); 
+    }
+        
+    }
+
+    void fahrenheit() {
+
+        cout << "+====================+" << endl;
+        cout << "||  ************  **  ||" << endl;
+        cout << "||  ***********   **  ||" << endl;
+        cout << "||  ***               ||" << endl;
+        cout << "||  ********          ||" << endl;
+        cout << "||  ***               ||" << endl;
+        cout << "||  ***               ||" << endl;
+        cout << "+====================+" << endl;
+
+        cout << "=====================" << endl ;
+        cout << "CHOSE OPERATION : " << endl ;
+        cout << "1.CELCIUS" << endl ;
+        cout << "2.REAMUR" << endl ;
+        cout << "3.KELVIN" << endl ;
+        cout << "4.BACK" << endl ;
+        cin >> opsifahrenheit ;
+        
+        temperatur temp ;
+
+        if (opsifahrenheit == 1)
+        {
+            cout << "Enter degrees Fahrenheit: " ;
+            cin >> temp.Dfahrenheit ;
+
+            cout << "result : " 
+                 << (temp.Dfahrenheit - 32) * 5/9
+                 << "° celcius"  << endl ;
+        }else if (opsifahrenheit == 2)
+        {
+            cout << "Enter degrees fahrenheit: " ;
+            cin >> temp.Dcelcius ;
+
+            cout << "result : " 
+                 << (temp.Dfahrenheit - 32) * 4 / 5 
+                 << "° reamur"  << endl ;
+        }else if (opsifahrenheit == 3)
+        {
+            cout << "Enter degrees fahrenheit: " ;
+            cin >> temp.Dfahrenheit ;
+
+            cout << "result : " 
+                 << (temp.Dfahrenheit - 32 ) * 5/9 + kelvin 
+                 << "° kelvin"  << endl ;
+        }else if(opsifahrenheit == 4) {
+            input() ;
+        }
+        
+
+        cout << "continue ? y/n : " ;
+        cin >> confirm ;
+
+    while (confirm == 'y')
+    {
+    cout << "=====================" << endl ;
+        cout << "CHOSE OPERATION : " << endl ;
+        cout << "1.FAHRENHEIT" << endl ;
+        cout << "2.REAMUR" << endl ;
+        cout << "3.KELVIN" << endl ;
+        cout << "4.back" << endl ;
+        cin >> opsicelcius ;
+        
+        temperatur temp ;
+
+        if (opsicelcius == 1)
+        {
+            cout << "Enter degrees Celsius: " ;
+            cin >> temp.Dcelcius ;
+
+            cout << "result : " 
+                 << temp.Dcelcius * 9 / 5 + 32 
+                 << "° Fahrenheit"  << endl ;
+        }else if (opsicelcius == 2)
+        {
+            cout << "Enter degrees Celsius: " ;
+            cin >> temp.Dcelcius ;
+
+            cout << "result : " 
+                 << temp.Dcelcius * 4 / 5 
+                 << "° reamur"  << endl ;
+        }else if (opsicelcius == 3)
+        {
+            cout << "Enter degrees Celsius: " ;
+            cin >> temp.Dcelcius ;
+
+            cout << "result : " 
+                 << temp.Dcelcius + kelvin 
+                 << "° kelvin"  << endl ;
+        }else if(opsicelcius == 4) {
+            input() ;
         }
 
         cout << "continue ? y/n : " ;
@@ -110,7 +266,12 @@ int main() {
     if (opsi == 1)
     {
         convers.Celcius() ;
-    }else if (opsi == 5) {
+    }else if (opsi == 2)
+    {
+        convers.fahrenheit();
+    }
+    
+    else if (opsi == 5) {
         system("clear") ;
     }
     
