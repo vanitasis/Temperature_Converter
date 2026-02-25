@@ -14,7 +14,7 @@ double opsicelcius ;
 double opsifahrenheit ;
 double opsireamur ;
 double opsikelvin ;
-char confirm ;
+char confirm, confirmout ;
 const double kelvin = 273.15 ;
 
 class Konversi {
@@ -95,7 +95,7 @@ class Konversi {
                  << temp.Dcelcius + kelvin 
                  << "° kelvin"  << endl ;
         }else if(opsicelcius == 4) {
-            input() ;
+            return ;
         }
         
 
@@ -139,13 +139,13 @@ class Konversi {
                  << temp.Dcelcius + kelvin 
                  << "° kelvin"  << endl ;
         }else if(opsicelcius == 4) {
-            input() ;
+            return ;
         }if (confirm == 'n')
         {
         input(); 
         }
 
-        cout << "continue program ? y/n : " ;
+        cout << "continue ? y/n : " ;
         cin >> confirm ;
     }
 
@@ -198,27 +198,27 @@ class Konversi {
                  << (temp.Dfahrenheit - 32 ) * 5/9 + kelvin 
                  << "° kelvin"  << endl ;
         }else if (opsifahrenheit == 4) {
-            input() ;
+            return ;
+        }else if (confirm == 'n')
+        {
+        input(); 
         }
        
 
         cout << "continue ? y/n : " ;
         cin >> confirm ;
 
-         if (confirm == 'n')
-    {
-        input(); 
-    }
 
     while (confirm == 'y')
     {
+    
     cout << "=====================" << endl ;
         cout << "CHOSE OPERATION : " << endl ;
         cout << "1.FAHRENHEIT" << endl ;
         cout << "2.REAMUR" << endl ;
         cout << "3.KELVIN" << endl ;
         cout << "4.back" << endl ;
-        cin >> opsicelcius ;
+        cin >> opsifahrenheit ;
         
         temperatur temp ;
 
@@ -233,7 +233,7 @@ class Konversi {
         }else if (opsifahrenheit == 2)
         {
             cout << "Enter degrees fahrenheit: " ;
-            cin >> temp.Dcelcius ;
+            cin >> temp.Dfahrenheit ;
 
             cout << "result : " 
                  << (temp.Dfahrenheit - 32) * 4 / 5 
@@ -247,20 +247,19 @@ class Konversi {
                  << (temp.Dfahrenheit - 32 ) * 5/9 + kelvin 
                  << "° kelvin"  << endl ;
         }else if(opsifahrenheit == 4) {
-            input() ;
+            return ;
         }else if (confirm == 'n')
         {
         input(); 
         }
 
-        cout << "continue ? y/n : " ;
+        cout << "contiue ? y/n : " ;
         cin >> confirm ;
-    
         
     }
-
-
+    
     }
+
     void reamur() {
 
         cout << "+====================+" << endl;
@@ -307,7 +306,7 @@ class Konversi {
                  << (temp.Dreamur * 5/4 ) + kelvin 
                  << "° kelvin"  << endl ;
         }else if(opsireamur == 4) {
-            input() ;
+            return ;
         }
 
         cout << "continue ? y/n : " ;
@@ -349,14 +348,12 @@ class Konversi {
                  << (temp.Dreamur * 5/4 ) + kelvin 
                  << "° kelvin" << endl ;
         }else if(opsireamur == 4) {
-            input() ;
-        }
-        cout << "continue ? y/n : " ;
-        cin >> confirm ;
-         if (confirm == 'n')
+            return ;
+        }else if (confirm == 'n')
     {
         input(); 
-    }
+    }cout << "continue ? y/n : " ;
+        cin >> confirm ;
     }
 }
     void Kelvin() {
@@ -405,16 +402,12 @@ class Konversi {
                  << (temp.Dkelvin - kelvin) * 0.8 
                  << "° reamur"  << endl ;
         }else if(opsikelvin == 4) {
-            input() ;
+            return ;
         }
         
 
         cout << "continue ? y/n : " ;
         cin >> confirm ;
-         if (confirm == 'n')
-    {
-        input(); 
-    }
 
     while (confirm == 'y')
     {
@@ -451,8 +444,11 @@ class Konversi {
                  << (temp.Dkelvin - kelvin) * 0.8 
                  << "° reamur"  << endl ;
         }else if(opsikelvin == 4) {
-            input() ;
+            return ;
         }
+
+        cout << "contiue ? y/n : " ;
+        cin >> confirm ;
     }
     }
     
@@ -460,6 +456,10 @@ class Konversi {
 
 int main() {
     Konversi convers ;
+    
+
+    while(true) {
+
     convers.input() ;
 
     if (opsi == 1)
@@ -476,8 +476,11 @@ int main() {
         convers.Kelvin() ;
     }
     else if(opsi == 5) {
-        system("clear") ;
+        break ;
     }
+    }
+    
+    
     
     
     return 0 ;
