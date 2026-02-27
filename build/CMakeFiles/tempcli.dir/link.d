@@ -4,6 +4,7 @@ tempcli: \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o \
   CMakeFiles/tempcli.dir/src/main.cpp.o \
   CMakeFiles/tempcli.dir/src/converter.cpp.o \
+  CMakeFiles/tempcli.dir/src/ConverterInputSystem.cpp.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libm.so \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/libm.so \
@@ -41,6 +42,8 @@ tempcli: \
 CMakeFiles/tempcli.dir/src/main.cpp.o:
 
 CMakeFiles/tempcli.dir/src/converter.cpp.o:
+
+CMakeFiles/tempcli.dir/src/ConverterInputSystem.cpp.o:
 
 /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so:
 

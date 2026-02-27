@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tempcli.dir/link.d"
+  "CMakeFiles/tempcli.dir/src/ConverterInputSystem.cpp.o"
+  "CMakeFiles/tempcli.dir/src/ConverterInputSystem.cpp.o.d"
   "CMakeFiles/tempcli.dir/src/converter.cpp.o"
   "CMakeFiles/tempcli.dir/src/converter.cpp.o.d"
   "CMakeFiles/tempcli.dir/src/main.cpp.o"

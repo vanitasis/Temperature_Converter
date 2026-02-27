@@ -129,6 +129,30 @@ tempcli/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tempcli.dir/build.make CMakeFiles/tempcli.dir/build
 .PHONY : tempcli/fast
 
+src/ConverterInputSystem.o: src/ConverterInputSystem.cpp.o
+.PHONY : src/ConverterInputSystem.o
+
+# target to build an object file
+src/ConverterInputSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tempcli.dir/build.make CMakeFiles/tempcli.dir/src/ConverterInputSystem.cpp.o
+.PHONY : src/ConverterInputSystem.cpp.o
+
+src/ConverterInputSystem.i: src/ConverterInputSystem.cpp.i
+.PHONY : src/ConverterInputSystem.i
+
+# target to preprocess a source file
+src/ConverterInputSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tempcli.dir/build.make CMakeFiles/tempcli.dir/src/ConverterInputSystem.cpp.i
+.PHONY : src/ConverterInputSystem.cpp.i
+
+src/ConverterInputSystem.s: src/ConverterInputSystem.cpp.s
+.PHONY : src/ConverterInputSystem.s
+
+# target to generate assembly for a file
+src/ConverterInputSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tempcli.dir/build.make CMakeFiles/tempcli.dir/src/ConverterInputSystem.cpp.s
+.PHONY : src/ConverterInputSystem.cpp.s
+
 src/converter.o: src/converter.cpp.o
 .PHONY : src/converter.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... tempcli"
+	@echo "... src/ConverterInputSystem.o"
+	@echo "... src/ConverterInputSystem.i"
+	@echo "... src/ConverterInputSystem.s"
 	@echo "... src/converter.o"
 	@echo "... src/converter.i"
 	@echo "... src/converter.s"

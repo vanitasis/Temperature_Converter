@@ -135,4 +135,5 @@ CMakeFiles/tempcli.dir/src/main.cpp.o: \
  /usr/include/c++/15/bits/basic_ios.tcc \
  /usr/include/c++/15/bits/ostream.tcc /usr/include/c++/15/istream \
  /usr/include/c++/15/bits/istream.tcc \
- /home/vanitasis/Documents/Projek_c++/TEMPERATURE_CHECKER/include/converter.hpp
+ /home/vanitasis/Documents/Projek_c++/TEMPERATURE_CHECKER/include/converter.hpp \
+ /home/vanitasis/Documents/Projek_c++/TEMPERATURE_CHECKER/include/ConverterInputSystem.hpp

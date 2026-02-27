@@ -12,4 +12,5 @@ include_directories(include)
 add_executable(tempcli
     src/main.cpp
     src/converter.cpp
+    src/ConverterInputSystem.cpp
 )
