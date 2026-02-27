@@ -1,3 +1,0 @@
-/home/vanitasis/Documents/Projek_c++/TEMPERATURE_CHECKER/build/CMakeFiles/tempcli.dir
-/home/vanitasis/Documents/Projek_c++/TEMPERATURE_CHECKER/build/CMakeFiles/edit_cache.dir
-/home/vanitasis/Documents/Projek_c++/TEMPERATURE_CHECKER/build/CMakeFiles/rebuild_cache.dir
