@@ -17,6 +17,8 @@ class convertermenu {
     void menufahrenheit() ;
     void menureamur() ;
     void menukelvin() ;
+
+    int getopsitemp();
 };
 
 #endif

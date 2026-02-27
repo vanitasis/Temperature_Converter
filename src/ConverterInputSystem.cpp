@@ -19,7 +19,26 @@ void convertermenu::input() {
         cout << "3.REAMUR" << endl ;
         cout << "4.KELVIN" << endl ;
         cout << "5.BACK" << endl ;
-        cin >> opsitemp ;
+        cin >> opsitemp;
+
+    if (opsitemp == 1) {
+        menucelcius();
+    }
+    else if (opsitemp == 2) {
+        menufahrenheit();
+    }
+    else if (opsitemp == 3) {
+        menureamur();
+    }
+    else if (opsitemp == 4) {
+        menukelvin();
+    }
+    else if (opsitemp == 5) {
+        cout << "Program selesai." << endl;
+    }
+    else {
+        cout << "Pilihan tidak valid!" << endl;
+    }
 }
 
 void convertermenu::menucelcius() {
