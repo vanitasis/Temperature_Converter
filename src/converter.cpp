@@ -18,3 +18,4 @@ double converter::RtoK(double r) { return RtoC(r) + k; }
 double converter::KtoC(double k) { return k - k; }
 double converter::KtoF(double k) { return KtoC(k) * 9.0/5 + 32; }
 double converter::KtoR(double k) { return KtoC(k) * 4.0/5; }
+
