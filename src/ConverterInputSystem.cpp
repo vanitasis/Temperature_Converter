@@ -5,7 +5,10 @@
 using namespace std ;
 
 void convertermenu::input() {
-    cout << "+=========================================+" << endl;
+
+    while (true)
+    {
+        cout << "+=========================================+" << endl;
         cout << "||  ********* ****** ***   *** *******   ||" << endl;
         cout << "||  ********* ***    **** **** ***   **  ||" << endl;
         cout << "||     ***    ****** *** * *** *******   ||" << endl;
@@ -34,15 +37,21 @@ void convertermenu::input() {
         menukelvin();
     }
     else if (opsitemp == 5) {
-        cout << "Program selesai." << endl;
+        return;
     }
     else {
         cout << "Pilihan tidak valid!" << endl;
     }
+    }
+    
 }
 
 void convertermenu::menucelcius() {
-    double value ;
+
+    bool running = true ;
+    while (running)
+    {
+        double value ;
 
         cout << "+====================+" << endl;
         cout << "||   *********  **  ||" << endl;
@@ -84,25 +93,20 @@ void convertermenu::menucelcius() {
             cout << "Result : " << result << "K" << endl;
         }else if (opsi == 4) 
         {
-            input() ;
+            running = false ;
+        }else {
+            cout << "invalid inpt !" << endl ;
         }
-        
-        
-        cout << "continue count ? [y/n] : " ;
-        cin >> confirm ;
-
-        if (confirm == 'y')
-        {
-            menucelcius() ;
-        }else if (confirm = 'n')
-        {
-            input() ;
-        }
+    }
 }
 
 void convertermenu::menufahrenheit() {
 
-    double value ;
+    bool running = true ;
+
+    while (running)
+    {
+            double value ;
 
         cout << "+====================+" << endl;
         cout << "||  ************  ** ||" << endl;
@@ -144,26 +148,18 @@ void convertermenu::menufahrenheit() {
             cout << "Result : " << result << "K" << endl;
         }else if (opsi == 4) 
         {
-            input() ;
+            running = false ;
         }
-        
-        
-        cout << "continue count ? [y/n] : " ;
-        cin >> confirm ;
-
-        if (confirm == 'y')
-        {
-            menufahrenheit() ;
-        }else if (confirm = 'n')
-        {
-            input() ;
-        }
+    }
 }
 
 void convertermenu::menureamur() {
 
+    bool running = true ;
     double value ;
 
+    while (running)
+    {
         cout << "+====================+" << endl;
         cout << "||  ********  **    ||" << endl;
         cout << "||  ***   *** **    ||" << endl;
@@ -204,26 +200,18 @@ void convertermenu::menureamur() {
             cout << "Result : " << result << "K" << endl;
         }else if (opsi == 4) 
         {
-            input() ;
+            running = false ;
         }
-        
-        
-        cout << "continue count ? [y/n] : " ;
-        cin >> confirm ;
-
-        if (confirm == 'y')
-        {
-            menureamur() ;
-        }else if (confirm = 'n')
-        {
-            input() ;
-        }
+    }
 }
 
 void convertermenu::menukelvin() {
 
+    bool running = true ;
     double value ;
 
+    while (running)
+    {
         cout << "+====================+" << endl;
         cout << "||  ***    *** **   ||" << endl;
         cout << "||  ***   ***  **   ||" << endl;
@@ -264,18 +252,7 @@ void convertermenu::menukelvin() {
             cout << "Result : " << result << "R" << endl;
         }else if (opsi == 4) 
         {
-            input() ;
+            running = false ;
         }
-        
-        
-        cout << "continue count ? [y/n] : " ;
-        cin >> confirm ;
-
-        if (confirm == 'y')
-        {
-            menukelvin() ;
-        }else if (confirm = 'n')
-        {
-            input() ;
-        }
+    }
 }
